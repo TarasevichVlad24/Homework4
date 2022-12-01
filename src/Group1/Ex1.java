@@ -9,10 +9,9 @@ public class Ex1 {
         Scanner s = new Scanner(System.in);
         System.out.println("Введите число");
         a = s.nextInt();
-        int[] mass = new int[5];
-        for (int i = 1; i <= mass.length; i++) {
+        int[] mass = new int[10];
+        for (int i = 0; i <= mass.length; i++) {
             mass[i] = i;
-            mass[a] = a;
             System.out.print(" "+mass[i]);
 
         }
