@@ -1,6 +1,7 @@
 package Group1;
 
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ex1 {
@@ -9,20 +10,32 @@ public class Ex1 {
         Scanner s = new Scanner(System.in);
         System.out.println("Введите число");
         a = s.nextInt();
-        int[] mass = new int[10];
-        for (int i = 0; i <= mass.length; i++) {
-            mass[i] = i;
-            System.out.print(" "+mass[i]);
+        int[] mass = new int[]{2,6,7,5,4,4};
 
-        }
-        if (a>=mass.length){
-            System.out.println("  Такого числа в массиве нет");
-        }else {
-            System.out.println("Результат");
-
+        int counter = 0;
+        for(int n=0;n<mass.length;n++){
+            if(mass[n] ==a){
+                counter++;
+            }
         }
 
+        int [] mass2 = new int[mass.length - counter];
+        for(int n=0;n<mass.length-counter;n++){
+            int c = 0;
+            if(mass[n] !=a){
+                mass2[c] = mass[n];
+                c++;
+            }
         }
 
-    }
+        System.out.printf(Arrays.toString(mass2));
+
+
+
+
+        }
+
+        }
+
+
 

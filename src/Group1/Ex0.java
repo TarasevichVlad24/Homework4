@@ -12,10 +12,10 @@ public class Ex0 {
         int[] num = new int[10];
         for (int i = 0; i < num.length; i++) {
         }
-        if (a < num.length) {
+        //if (a < num.legth) {
             System.out.println("Число входит");
-        } else {
+        //} else {
             System.out.println("Число не входит");
         }
     }
-}
+//}
