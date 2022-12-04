@@ -15,8 +15,6 @@ public class Ex0 {
 
             if (a == num[i]) {
                 count++;
-            } else {
-
             }
         }
         if (count > 0) {

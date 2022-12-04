@@ -5,24 +5,24 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ex1 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int a;
         Scanner s = new Scanner(System.in);
         System.out.println("Введите число");
         a = s.nextInt();
-        int[] mass = new int[]{2,6,7,5,4,4};
+        int[] mass = new int[]{2, 6, 7, 5, 4, 4};
 
         int counter = 0;
-        for(int n=0;n<mass.length;n++){
-            if(mass[n] ==a){
+        for (int n = 0; n < mass.length; n++) {
+            if (mass[n] == a) {
                 counter++;
             }
         }
+        int c = 0;
+        int[] mass2 = new int[mass.length - counter];
+        for (int n = 0; n < mass.length - counter; n++) {
 
-        int [] mass2 = new int[mass.length - counter];
-        for(int n=0;n<mass.length-counter;n++){
-            int c = 0;
-            if(mass[n] !=a){
+            if (mass[n] != a) {
                 mass2[c] = mass[n];
                 c++;
             }
@@ -31,11 +31,9 @@ public class Ex1 {
         System.out.printf(Arrays.toString(mass2));
 
 
+    }
 
-
-        }
-
-        }
+}
 
 
 
