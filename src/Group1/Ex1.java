@@ -18,6 +18,9 @@ public class Ex1 {
                 counter++;
             }
         }
+        if(counter==0){
+            System.out.println("Число не входит");
+        }
         int c = 0;
         int[] mass2 = new int[mass.length - counter];
         for (int n = 0; n < mass.length - counter; n++) {
